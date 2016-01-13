@@ -1,0 +1,99 @@
+* {
+	margin:0;
+	padding:0;
+}
+body{
+
+	background: #adb195 url('images/green_background.jpg') top left repeat;
+	color: #75040a;
+	font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Verdana,sans-serif;
+	font-size: 14px;
+}
+/* layout */
+#logo{
+	display: block;
+	width: 200px; /* width of image */
+	margin: 40px auto; /* margin at the top and bottom are 40 and left and right are auto */
+	background: none; /* removed background applied by the a:link style */
+}
+#container{
+	width:760px;
+	margin: 0 auto;
+	padding: 40px;
+	background: url('images/yellow_background.jpg') top left repeat;
+}
+#container:after {
+	content: " ";
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+#main-content{
+	width: 500px;
+	float: left;
+}
+#sidebar{
+	background: url('images/texture_background.jpg') top left repeat;
+	width: 200px;
+	float: left;
+	padding: 20px 20px 0;
+	margin: 0 0 0 20px; /* setting the px size equivalent to width of container. 500 + 200 + 40 (padding) + 20 from the left */
+}
+#sidebar h3{
+	background: url('images/green_background.jpg') top left repeat;
+	padding: 10px 10px 10px 30px;
+	margin: 0 0 5px;
+	color: white;
+	position: relative;
+	left: -30px;
+}
+#sidebar .widget{
+	margin: 0 0 20px;
+}
+#sidebar a{
+	display: inline-block;
+}
+#special-offer{
+	position: relative;
+	background: url('images/red_background.jpg') top left repeat;
+	color: white;
+	padding: 0 20px 20px 20px;
+	margin: 60px 0 0 0;
+}
+#special-offer h2{
+	background: url('images/green_background.jpg') top left repeat;
+	font-size: 22px;
+	padding: 5px;
+	display: inline;
+	position: relative;
+	top: -15px;
+	left: -35px;
+}
+#steak {
+	position: absolute;
+	bottom: -20px;
+	right: 10px;
+}
+h1, h2, h3 {
+	font-family: "Arial Rounded MT Bold","Helvetica Rounded",Arial,sans-serif;
+	font-weight: normal;
+}
+h1{
+	font-size: 40px;
+}
+address ul{
+	list-style: none;
+}
+p.lead{
+	font-family: Tahoma,Verdana,Segoe,sans-serif;
+	font-size: 18px;
+	margin: 0 0 30px;
+}
+a:link{
+	background: #577a1b;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 5px;
+}
